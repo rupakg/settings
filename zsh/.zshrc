@@ -28,8 +28,13 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/home/rgdev/.rvm/gems/ruby-1.9.2-p290/bin:/home/rgdev/.rvm/gems/ruby-1.9.2-p290@global/bin:/home/rgdev/.rvm/rubies/ruby-1.9.2-p290/bin:/home/rgdev/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+export EDITOR="nano"
+
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 
 
 
