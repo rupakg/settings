@@ -1,9 +1,13 @@
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-PROMPT='[%{$fg[blue]%}$(~/.rvm/bin/rvm-prompt)%{$reset_color%}] \
+BOLT_SYMBOL="  "
+DARROW_SYMBOL="»"
+
+RVM_PROMPT="~/.rvm/bin/rvm-prompt"
+PROMPT='[%{$fg[blue]%}$(BOLT_SYMBOL)%{$reset_color%}] \
 %{$fg[green]%}%c \
 $(git_prompt_info)\
-%{$fg[red]%}%(!.#.»)%{$reset_color%} '
+%{$fg[red]%}%(!.#.$BOLT_SYMBOL)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='%{$fg[blue]%}%~%{$reset_color%} ${return_code} '
 
