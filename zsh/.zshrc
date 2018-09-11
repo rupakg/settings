@@ -32,9 +32,23 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 export EDITOR="nano"
 
+# Go stuff
+export GOPATH=$HOME/projects/goapps
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+# node stuff
+export NODE_PATH="/usr/local/lib/node/"
+# npm stuff
+export PATH=/usr/local/share/npm/bin:$PATH
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+PATH=$PATH:$HOME/.rvm/bin: # Add RVM to PATH for scripting
+PATH=$PATH:$NVM_DIR/bin:   # Add NVM to PATH for scripting
 
 
 
