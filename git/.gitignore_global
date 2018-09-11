@@ -52,3 +52,10 @@ doc
 
 # coverage
 coverage
+
+# Node stuff
+node_modules/
+.intermediate-representation/
+.cache/
+yarn.lock
+.env
