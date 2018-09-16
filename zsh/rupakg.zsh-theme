@@ -1,6 +1,6 @@
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-BOLT_SYMBOL=" "
+BOLT_SYMBOL="⚡"
 DARROW_SYMBOL="»"
 
 RVM_PROMPT="$HOME/.rvm/bin/rvm-prompt"
