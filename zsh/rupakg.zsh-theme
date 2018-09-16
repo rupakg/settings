@@ -1,11 +1,12 @@
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-BOLT_SYMBOL="⚡"
+BOLT_SYMBOL=" "
 DARROW_SYMBOL="»"
 
 RVM_PROMPT="$HOME/.rvm/bin/rvm-prompt"
+NODE_PROMPT="nvm current"
 
-PROMPT='[%{$fg[magenta]%}$($RVM_PROMPT)%{$reset_color%}] \
+PROMPT='[%{$fg[magenta]%}$($RVM_PROMPT)|node-$(node -v)%{$reset_color%}] \
 %{$fg[green]%}%c \
 $(git_prompt_info)\
 %{$fg[yellow]%}%(!.#.$BOLT_SYMBOL)%{$reset_color%} '
